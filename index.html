@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>  
+        body{
+            background-image: radial-gradient(circle, rgb(70, 29, 148), rgb(0, 0, 0));
+        }
+
+
+        h1{ 
+            text-align: center;
+            margin: 60px 0 40px 0;
+            font-size: 1.5em;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        .lista{
+            background: rgb(105, 73, 180);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(50, 50, 90, 1);
+        }
+
+        .titulo{ 
+            cursor: pointer;
+            padding: 0.5px;
+            font-size: 1.5em;
+            font-family: monospace;
+            color: #ffffff;
+        }
+
+        .titulo::after {
+            content: 'III';
+            float: right;
+            transform: rotate(90deg);
+            transition: transform .3s ease;
+            font-family: arial;
+        }
+        .conteudo{
+            padding: 10px;
+            color: #ffffff;
+            font-family:Helvetica;
+            font-size: .875em;
+            line-height: 1.4em;
+            display: none;
+            background-color: rgb(49, 2, 110);
+            border-radius: 10px;
+        }
+        .a2{
+            display: none;
+        }
+
+        .a2:checked + .a1 .conteudo{ 
+            display: inline-block;
+
+        }
+        .a2:checked + .a1 .titulo::after{
+            transform: rotate(180deg) scale(1.90);
+            content: 'W';
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a{
+            color: #ffffff;
+            font-size: 1em;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        nav{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+
+
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <h1><img src="azzion.png" alt="" height="90"></h1>
+
+    <div class="lista">
+        <input class="a2" id="titulo-1" type="checkbox">
+        <div class="a1">
+            <center> 
+             <label for="titulo-1">
+                <nav>
+                    <a href="Minas.html">MINAS</a>
+                    <a href="Esporte.html">ESPORTE</a>
+                    <a href="cultura.html">CULTURA</a>
+                    <a href="economia.html">ECONOMIA</a>
+                    <a href="politica.html">POLITICA</a>
+                    <a href="educação.html">EDUCAÇÃO</a>
+                    <a href="tecnologia.html">TECNOLOGIA</a>
+                </nav>
+             </label>
+            </center>
+        </div>
+    </div>
+<center>
+    <img src="inv.jpg" alt="">
+</center>
+    
+</body>
+    <body>
+     <form> 
+        
+     </form>
+    </body> 
+</html>
